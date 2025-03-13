@@ -54,3 +54,18 @@ let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated":"Not authenticated";
 
 console.log("Authentication Status: ",authenticationStatus);
+
+let roles = "Employee";
+let orgAccess;
+
+if (roles === "Employee") {
+    orgAccess = "Dietary Services";
+} else if (roles === "Enrolled Member") {
+    orgAccess = "Partial access to Dietary Services";
+} else if(roles === "Subscriber") {
+    orgAccess = "Need to subscribe or enroll";
+} else {
+    orgAccess ="Invaliuid role";
+}
+
+console.log("access: ",orgAccess);
