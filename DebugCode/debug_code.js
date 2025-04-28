@@ -10,22 +10,44 @@
 
                     // Display the result
                     displayResult(result);
+                    result = add(num1,num2)
+                    displayResult(result);
+
+                    result = sub(num1,num2)
+                    displayResult(result);
+
                 } else {
                     displayResult('Please enter valid numbers');
                 }
-            }
+}
 
-            function multiply(a, b) {
+function multiply(a, b) {
                 // Introduce a debugger statement to pause execution
                 debugger;
 
                 // Multiply the numbers
                 return a * b;
-            }
+}
 
-            function displayResult(result) {
+function add(a, b) {
+                // Introduce a debugger statement to pause execution
+                debugger;
+
+                // Multiply the numbers
+                return a + b;
+}
+
+function sub(a, b) {
+                // Introduce a debugger statement to pause execution
+                debugger;
+
+                // Multiply the numbers
+                return a - b;
+}
+
+function displayResult(result) {
                 // Display the result in the paragraph element
                 const resultElement = document.getElementById('result');
                 resultElement.textContent = `The result is: ${result}`;
-            }
+}
         
